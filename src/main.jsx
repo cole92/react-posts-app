@@ -7,10 +7,8 @@ import { Provider } from 'react-redux'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Provider store={store}>
-      
+    <Provider store={store}> {/* Omotavamo aplikaciju sa Provider-om */}
     <App />
-    
     </Provider>
   </StrictMode>,
 )
