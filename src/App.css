@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+#posts {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 50px;
+}
+#posts > div {
+  border: 2px solid purple;
+  border-radius: 10px;
+  padding: 50px;
+  color: orangered;
+}
+#posts h3 {
+  text-transform: uppercase;
+}

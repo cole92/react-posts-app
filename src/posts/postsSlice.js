@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getPosts = createAsyncThunk(
-    'posts/getPosts',
+    'posts/getPosts', // Naziv akcije
     async () => {
         return fetch(
             'https://jsonplaceholder.typicode.com/posts'
@@ -10,10 +10,10 @@ export const getPosts = createAsyncThunk(
 ) 
 
 const postSlice = createSlice({
-    name: 'posts',
+    name: 'posts', // Ime slice-a (deo stanja)
     initialState: {
-        list: [], 
-        status: null,
+        list: [], // Pocetno stanje
+        status: null, // Status API poziva (loading, success, failed)
     },
     extraReducers: (builder) => { // Koristimo builder callback notaciju
         builder
