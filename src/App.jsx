@@ -1,10 +1,10 @@
 import './App.css'
-
+import Posts from './posts/Posts'
 function App() {
 
 
   return (
-    <p>Something</p>
+      <Posts />
   )
 }
 
