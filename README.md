@@ -1,8 +1,38 @@
-# React + Vite
+# React Posts App (Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React demo app that fetches blog posts from the JSONPlaceholder API and displays them in a responsive grid layout.
 
-Currently, two official plugins are available:
+## Features
+- Fetch posts from JSONPlaceholder (`/posts`)
+- Render a post grid (title + body)
+- Basic loading / error state handling (if implemented)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech stack
+- React
+- Vite
+- Redux Toolkit (posts slice)
+- Fetch API
+
+## Data source
+Posts are loaded from:
+- https://jsonplaceholder.typicode.com/posts
+
+## Run locally
+```bash
+yarn install
+yarn dev
+```
+
+Or with npm:
+```bash
+npm install
+npm run dev
+```
+
+Then open the URL printed by Vite (usually `http://localhost:5173`).
+
+## Notes
+This is a learning/demo project and may be archived (not actively maintained).
+
+## License
+Educational / personal use.
